@@ -57,7 +57,7 @@
                 <div class="card border-0 shadow-sm rounded">
                     <div class="card-body">
                         <!-- FORM HERE -->
-                        <form action="{{ route('show') }}" method="POST" enctype="multipart/form-data">
+                        <form action="" method="POST" enctype="multipart/form-data">
 
                             
                             <div class="row">
