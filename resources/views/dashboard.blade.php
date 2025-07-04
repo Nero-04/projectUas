@@ -50,6 +50,168 @@
         <div class="mt-4">
             Selamat datang, <strong>{{ Auth::user()->name ?? 'User' }}</strong>! 🎉
         </div>
+
+        <div class="container mt-5 mb-5">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card border-0 shadow-sm rounded">
+                    <div class="card-body">
+                        <!-- FORM HERE -->
+                        <form action="{{ route('show') }}" method="POST" enctype="multipart/form-data">
+
+                            
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group mb-3">
+                                        <label class="font-weight-bold">Jadwal ID</label><br>
+                                        <input type="number" class="" name="" value="" placeholder="">
+
+                                        
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group mb-3">
+                                        <label class="font-weight-bold">Jenis Kendaraan</label>
+                                        <input type="text" class="" name="" value="" placeholder="">
+
+                                        
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="form-group mb-3">
+                                        <label class="font-weight-bold">Tinggi Kendaraan</label>
+                                        <input type="text" class="" name="" value="" placeholder="">
+
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-md btn-primary me-3">SAVE</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5 mb-5">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card border-0 shadow-sm rounded">
+                    <div class="card-body">
+                        <form action="" method="POST" enctype="multipart/form-data">
+
+                            
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group mb-3">
+                                        <label class="font-weight-bold">Plat Nomor</label><br>
+                                        <input type="number" class="" name="" value="" placeholder="">
+
+                                        
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group mb-3">
+                                        <label class="font-weight-bold">Jenis Kendaraan</label>
+                                        <input type="text" class="" name="" value="" placeholder="">
+
+                                        
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="form-group mb-3">
+                                        <label class="font-weight-bold">Tinggi Kendaraan</label>
+                                        <input type="text" class="" name="" value="" placeholder="">
+
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-md btn-primary me-3">SAVE</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5 mb-5">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card border-0 shadow-sm rounded">
+                    <div class="card-body">
+                        <form action="" method="POST" enctype="multipart/form-data">
+
+                            
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group mb-3">
+                                        <label class="font-weight-bold">Plat Nomor</label><br>
+                                        <input type="number" class="" name="" value="" placeholder="">
+
+                                        
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group mb-3">
+                                        <label class="font-weight-bold">Jenis Kendaraan</label>
+                                        <input type="text" class="" name="" value="" placeholder="">
+
+                                        
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="form-group mb-3">
+                                        <label class="font-weight-bold">Tinggi Kendaraan</label>
+                                        <input type="text" class="" name="" value="" placeholder="">
+
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-md btn-primary me-3">SAVE</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- <div class="container">
+    <h3>Tambah Data Kendaraan</h3>
+
+    <form method="POST" action="{{ route('kendaraan.store') }}">
+        @csrf
+
+        <div class="mb-3">
+            <label for="plat_nomor" class="form-label">Plat Nomor</label>
+            <input type="text" name="plat_nomor" class="form-control" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="jenis" class="form-label">Jenis Kendaraan</label>
+            <input type="text" name="jenis" class="form-control" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="merk" class="form-label">Merk</label>
+            <input type="text" name="merk" class="form-control" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="warna" class="form-label">Warna</label>
+            <input type="text" name="warna" class="form-control" required>
+        </div>
+
+        <button type="submit" class="btn btn-success">Simpan</button>
+        <a href="{{ route('kendaraan.index') }}" class="btn btn-secondary">Batal</a>
+    </form>
+</div> -->
+
     </div>
 </div>
 
