@@ -53,6 +53,10 @@ class AdminPanelProvider extends PanelProvider
             ])
             ->authMiddleware([
                 Authenticate::class,
-            ]);
+            ])
+            ->renderHook(
+                'footer.end',
+                fn () => '<div style="text-align:center;padding:16px 0;color:#aaa;font-size:14px;">Copyright Kelompok 7 Malam A</div>'
+            );
     }
 }
